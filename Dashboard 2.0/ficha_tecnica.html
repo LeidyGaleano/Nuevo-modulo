@@ -125,21 +125,25 @@
                     <h5>29052023</h5> 
                 </div>
                 <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Tipo de mantenimiento</label>
+                  <input type="text" required class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Fecha de entrega</label>
-                    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Fecha de entrega">
+                    <input type="date" required class="form-control" id="exampleFormControlInput1" placeholder="Fecha de entrega">
                   </div>
                   <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Total a pagar</label>
-                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Total a pagar">
+                    <input type="number" required class="form-control" id="exampleFormControlInput1" placeholder="Total a pagar">
                   </div>
                   <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Descripción de fallas</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" required id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Enviar</button>
+              <button class="btn btn-primary">Enviar</button></form>
             </div>
           </div>
         </div>
