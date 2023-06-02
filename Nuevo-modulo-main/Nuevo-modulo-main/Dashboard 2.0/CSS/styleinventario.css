@@ -1,0 +1,502 @@
+*
+{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "DM Sans";
+    font-style: normal;
+    background: rgb(241, 249, 252);   
+}
+
+.MenuLogo{
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    background-color: rgb(0, 0, 0);
+    width: 215px;
+    height: 300px;
+}
+nav li{
+    padding: 15px;
+    font-size: 25px;
+    display: flex;
+}
+nav li a .imgmenu{
+    width: 20%;
+    height: 20%;
+}
+
+nav li a span{
+    color: #00C1FF;
+    
+}
+.selecc:hover{
+    width: 160px;
+    height: 35px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.Izquierda {
+    width: 15%;
+    height: 950px;
+    background: #000000;
+}
+
+.Logo { 
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+}
+.Logotitulo{
+    font-size: 25px;
+    color: #00C1FF;
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+.MenA { 
+    position: absolute;
+    width: 178px;
+    height: 151px;
+    left: 50px;
+    top: 280px;
+}
+.MenB{
+    position: absolute;
+    width: 178px;
+    height: 184px;
+    left: 50px;
+    top: 450px;
+}
+
+.login{
+    position: relative;
+    top: 500px;
+    left: 40px;
+
+    width: 170px;
+    height: 50px;
+    bottom: 30px;
+    background: white;
+    border-radius: 6px;
+}
+.logintext{
+    font-size: 13px;
+    position: absolute;
+    width: 45px;
+    height: 18px;
+    left: 60px;
+    top: 8px;
+}
+
+.loginfoto{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 10px;
+    top: 8px;
+    border-radius: 30px;
+}
+.loginflecha {
+    position: absolute;
+    left: 130px;
+    top: 15px;
+    width: 25px;
+    height: 25px;
+    color: black;
+}
+
+.header {
+    font-size: 25px;
+    color: #00C1FF;
+    position: absolute;
+    top: 40px;
+    left: 350px;
+}
+
+.Buscar button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+}
+.Buscar {
+    --timing: 0.3s;
+    --width-of-input: 500px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: absolute;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg,#fff);
+    top: 10px;
+    left: 500px;
+}
+.input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+}
+.Buscar:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+}
+.Buscar:focus-within {
+    border-radius: var(--after-border-radius);
+}
+
+input:focus {
+    outline: none;
+}
+.Buscar:focus-within:before {
+    transform: scale(1);
+}
+.reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+}
+input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+}
+.Buscar svg {
+    width: 17px;
+    margin-top: 3px;
+}
+
+.tablafondo{
+    background-color: #ffffff;
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    border-radius: 20px;
+    height: 600px;
+    width: 900px;
+}
+.tabtitulo{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding-bottom: 10px;
+    color: #00C1FF;
+}
+
+.butontabla{
+    position: absolute;
+    top: -2px;
+    left: 650px;
+    height: 40px;
+    width: 80px;
+    background-color: rgb(204, 212, 218);
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+}
+.butontabla:hover {
+    background-color: #00C1FF;
+}
+.tabla {
+    position: relative;
+    top: 30px;
+    left: 75px;
+}
+.filtrar{
+    position: relative;
+    top: -40px;
+    left: 600px;
+}
+table {
+    color: #000000;
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+thead{
+    background: rgb(255, 255, 255);
+}
+th {
+    
+    border-bottom: 1px solid rgb(34, 56, 65);
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+td{
+    text-align: center;
+    padding: 15px;
+    border-bottom: solid 1px rgb(34, 56, 65);
+}
+tbody tr{
+    cursor: pointer;
+}
+tbody tr:hover{
+    background: #00C1FF;
+}
+
+.cheack{
+    position: absolute;
+    top: 500px;
+    left: -30px;
+}
+
+.chea1{
+    position: absolute;
+    top: 160px;
+    left: -30px;
+}
+.chea2{
+    position: absolute;
+    top: 245px;
+    left: -30px;
+}
+.chea3{
+    position: absolute;
+    top: 330px;
+    left: -30px;
+}
+.chea4{
+    position: absolute;
+    top: 415px;
+    left: -30px;
+}
+.formulfond{
+    position: absolute;
+    top: 540px;
+    left: 590px;
+    background: #ffffff;
+    height: 170px;
+    width: 170px;
+    border-radius: 15px;
+}
+
+.formul{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 150px;
+    width: 150px;
+    color: #000000;
+}
+
+.conten{
+    border-radius: 5px;
+    background: #ffffff;
+    padding: 1px;
+}
+.conten:hover{
+    background: #00C1FF;
+}
+.formul h2{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.pun{
+    position: absolute;
+    top: 500px;
+    left: 725px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.pun:hover{
+    background: #00C1FF;
+}
+
+.proveedoresfondo{
+    position: absolute;
+    top: 150px;
+    left: 1400px;
+    width: 400px;
+    height: 700px;
+    background: #ffffff;
+    border-radius: 15px;
+}
+.proveedoresfondo h1 {
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    color: #00C1FF;
+}
+.usuari1{
+    position: relative;
+    top: 50px;
+    left: 10px;
+    background: #ffffff;
+    height: 100px;
+    width: 380px;
+    color: #000000;
+    border-radius: 15px;
+    border: 1px solid #000000;
+}
+.usuari1 img{
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+.usuari1 h2{
+    position: relative;
+    top: -30px;
+    left: 100px;
+}
+.usuari1 h3{
+    position: relative;
+    top: -25px;
+    left: 100px;
+}
+
+.usuari2{
+    position: relative;
+    top: 60px;
+    left: 10px;
+    background: #ffffff;
+    height: 100px;
+    width: 380px;
+    color: #000000;
+    border-radius: 15px;
+    border: 1px solid #000000;
+}
+.usuari2 img{
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+.usuari2 h2{
+    position: relative;
+    top: -30px;
+    left: 100px;
+}
+.usuari2 h3{
+    position: relative;
+    top: -25px;
+    left: 100px;
+}
+
+.usuari3{
+    position: relative;
+    top: 70px;
+    left: 10px;
+    background: #ffffff;
+    height: 100px;
+    width: 380px;
+    color: #000000;
+    border-radius: 15px;
+    border: 1px solid #000000;
+}
+.usuari3 img{
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+.usuari3 h2{
+    position: relative;
+    top: -30px;
+    left: 100px;
+}
+.usuari3 h3{
+    position: relative;
+    top: -25px;
+    left: 100px;
+}
+.usuari4{
+    position: relative;
+    top: 80px;
+    left: 10px;
+    background: #ffffff;
+    height: 100px;
+    width: 380px;
+    color: #000000;
+    border-radius: 15px;
+    border: 1px solid #000000;
+}
+.usuari4 img{
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+.usuari4 h2{
+    position: relative;
+    top: -30px;
+    left: 100px;
+}
+.usuari4 h3{
+    position: relative;
+    top: -25px;
+    left: 100px;
+}
+
+.modif{
+    position: relative;
+    top: 200px;
+    left: 30px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+
+}
+.modif:hover{
+    background: #00C1FF;
+}
+.eliminar{
+    position: relative;
+    top: 200px;
+    left: 50px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.eliminar:hover{
+    background: #00C1FF;
+}
+.bloquear{
+    position: relative;
+    top: 200px;
+    left: 70px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.bloquear:hover{
+    background: #fc0000;
+}

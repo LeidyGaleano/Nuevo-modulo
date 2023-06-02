@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styleinventario.css">
+    <title>Inventario</title>
+</head>
+<body>
+    <section class="Izquierda" id="Izquierda">
+        <div class="M"> 
+            <img class="Logo" src="IMG/ds.png">
+            <h1 class="Logotitulo">J.A Computadores</h1>
+        </div>
+        <div class="MenuLogo">
+            <nav>
+                <li>
+                    <a class="selecc" href="#" style="text-decoration: none;">
+                        <i class='bx bxs-home' style='color:#ffffff' ></i>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="selecc" href="Index.html" style="text-decoration: none;">
+                        <i class='bx bxs-user-circle' style='color:#ffffff'></i>
+                        <span class="text">Usuarios</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="selecc" href="ventas.html" style="text-decoration: none;">
+                        <i class='bx bxs-shopping-bag' style='color:#ffffff'></i>
+                        <span class="text">Tienda</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="selecc" href="inventario.html" style="text-decoration: none;">
+                        <i class='bx bxs-book' style='color:#ffffff'></i>
+                        <span class="text">Inventario</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="selecc" href="garantias.html" style="text-decoration: none;">
+                        <i class='bx bxs-shield' style='color:#ffffff'></i>
+                        <span class="text">Garantias</span>
+                    </a>
+                </li>
+            </nav>
+        </div>
+        <div class="login">
+            <img class="loginfoto" src="IMG/Perfil.jpg">
+            <h2 class="logintext">Daniel<br>Admin</h2>
+            <img class="loginflecha" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtk9ENwjAMRF83YJN2BJiIEUo36EYwAmzCCOgkkEIax85HJZDirza63rMv7sDONezsTwe4CfeIfj+iC7ACT6PVA3AGFmuU2iXLfAbuwKkAkfkVmN4A6TdVA8jgBowFSGr+AI7WlN6aliDq8tN51VxCDyBNDtGZYnHNo4AcoveQeQsghejZzDy/5UhE6TeKS2WtbdMWuX9pRNA6QcTzS9MBbmT/H9ELPngdGfgDn7kAAAAASUVORK5CYII="/>
+        </div>
+    </section>
+
+    <section class="Centro" id="Centro">
+        <div class="header">
+            <h1>Inventario</h1>
+            <form class="Buscar">
+                <button>
+                    <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                        <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <input class="input" placeholder="Realice su busqueda" required="" type="text">
+                <button class="reset" type="reset">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </form>
+    </section>
+
+    <div class="tablafondo">
+        <div class="tabla">
+            <h1 class="tabtitulo">Tabla</h1>
+            <div class="filtrar"><img src="IMG/Filtrar.svg"></div>
+            <button class="butontabla">+ Crear</button>
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Imagen</th>
+                    <th>Stock Inicial</th>
+                    <th>Salidas</th>
+                    <th>Fecha De Movimiento</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>P001</td>
+                        <td>Memoria RAM</td>
+                        <td><img src="IMG/ram.png" style="width: 50px;height: 50px;"></td>
+                        <td>60</td>
+                        <td>15</td>
+                        <td>17/03/2023</td>
+                        <td style="font-size: 20px;">...</td>
+                    </tr>
+                    <tr>
+                        <td>P002</td>
+                        <td>Disco Duro 500GB</td>
+                        <td><img src="IMG/discoduroico.png" style="width: 50px;height: 50px;"></td>
+                        <td>15</td>
+                        <td>10</td>
+                        <td>17/03/2023</td>
+                        <td style="font-size: 20px;">...</td>
+                    </tr>
+                    <tr>
+                        <td>P003</td>
+                        <td>Procesadores</td>
+                        <td><img src="IMG/procesador.png" style="width: 50px;height: 50px;"></td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>17/03/2023</td>
+                        <td style="font-size: 20px;">...</td>
+                    </tr>
+                    <tr>
+                        <td>P004</td>
+                        <td>Ratón</td>
+                        <td><Img src="IMG/raton.png" style="width: 50px;height: 50px;"></Img></td>
+                        <td>30</td>
+                        <td>10</td>
+                        <td>17/03/2023</td>
+                        <td style="font-size: 20px;">...</td>
+                    </tr>
+                    <tr>
+                        <td>P005</td>
+                        <td>Camaras</td>
+                        <td><img src="IMG/camara-web.png" style="width: 50px;height: 50px;"></td>
+                        <td>15</td>
+                        <td>2</td>
+                        <td>17/03/2023</td>
+                        <td style="font-size: 20px;">...</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="chea1"><img src="IMG/chevasio.svg"></div>
+            <div class="chea2"><img src="IMG/chevasio.svg"></div>
+            <div class="chea3"><img src="IMG/chevasio.svg"></div>
+            <div class="chea4"><img src="IMG/chevasio.svg"></div>
+            <div class="cheack"><img src="IMG/cheak.svg"></div>
+            <div class="pun" style="font-size: 25px;">...</div>
+            <div class="formulfond">
+                <div class="formul">
+                    <div class="conten"><h2>Modificar</h2></div>
+                    <div class="conten"><h2>Borrar</h2></div>
+                    <div class="conten"><h2>Copiar</h2></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="proveedoresfondo">
+        <h1>Proveedores</h1>
+        <div class="proveedor">
+            <div class="usuari1">
+                <img src="IMG/usuario.png" style="width: 50px; height: 50px;">
+                <h2>Natalia Gomez</h2>
+                <h3>Cra 8 # 15 a 20sur</h3>
+                <img class="modi" src="IMG/Button.png" style="position: relative; top: -75px; left: 320px;">
+            </div>
+            <div class="usuari2">
+                <img src="IMG/usuario.png" style="width: 50px; height: 50px;">
+                <h2>Juan Rodriguez</h2>
+                <h3>Calle 15 # 18 sur</h3>
+                <img class="modi" src="IMG/Button.png" style="position: relative; top: -75px; left: 320px;">
+            </div>
+            <div class="usuari3">
+                <img src="IMG/usuario.png" style="width: 50px; height: 50px;">
+                <h2>James Rodriguez</h2>
+                <h3>Carrera 15 # 24-80 Norte</h3>
+                <img class="modi" src="IMG/Button.png" style="position: relative; top: -75px; left: 320px;">
+            </div>
+            <div class="usuari4">
+                <img src="IMG/usuario.png" style="width: 50px; height: 50px;">
+                <h2>Fernando Quintero</h2>
+                <h3>Calle 19 # 25-10 sur</h3>
+                <img class="modi" src="IMG/Button.png" style="position: relative; top: -75px; left: 320px;">
+            </div>
+            <button class="modif">Modificar</button>
+            <button class="eliminar">Eliminar</button>
+            <button class="bloquear">Bloquear</button>
+        </div> 
+    </div>
+</body>
+</html> 

@@ -58,15 +58,13 @@
 
     <section class="Centro" id="Centro">
         <div class="header">
-            <h1>Computadores para mantenimiento</h1>
+            <h1>Seguimieto final - ficha técnica</h1>
     </section>
 
     <section class="formulario">
         <div class="fond1">
-            <div class="text-center">
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Registrar equipo
-  </button>
+            <div class="confirmar">
+                <h2>Registrar</h2>
             </div>
             <br>
             <br>
@@ -74,41 +72,40 @@
             <table class="table">
                 <thead>
                   <tr>
-                    
                     <th scope="col">#</th>
-                    <th scope="col">Documento</th>
                     <th scope="col">Nombre</th>
-                    <th scope="col">Teléfono</th>
-                    <th scope="col">Marca</th>
-                    <th scope="col">Fecha-llegada</th>
+                    <th scope="col">Computador</th>
+                    <th scope="col">Llegada</th>
+                    <th scope="col">Acciones</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row"><a href="seguimiento.html">1</a></th>
-                    <td>1003944567</td>
+                    <th scope="row">1</th>
                     <td>Diego Mendoza</td>
-                    <td>3059295421</td>
                     <td>HP</td>
                     <td>14/05/23</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Ver detalles
+                      </button></td>
                   </tr>
                   <tr>
-                    <th scope="row"><a href="seguimiento.html">2</a></th>
-                    <td>1099356789</td>
+                    <th scope="row">2</th>
                     <td>Daniela Conejo</td>
-                    <td>3212371506</td>
                     <td>Apple</td>
                     <td>29/05/23</td>
-                    
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Ver detalles
+                      </button></td>
                   </tr>
                   <tr>
-                    <th scope="row"><a href="seguimiento.html">3</a></th>
-                    <td>1022934334</td>
+                    <th scope="row">3</th>
                     <td>Steban Lopez</td>
-                    <td>3096789950</td>
                     <td>Asus</td>
                     <td>26/11/23</td>
-                    
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Ver detalles
+                      </button></td>
                   </tr>
                 </tbody>
               </table>
@@ -118,43 +115,35 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Registro de computadores</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Entrega final</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Documento del cliente</label>
-                      <input type="number" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Nombre</label>
-                      <input type="text" required class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Teléfono</label>
-                        <input type="number" required class="form-control" id="exampleInputPassword1">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Marca del equipo</label>
-                        <input type="text" required class="form-control" id="exampleInputPassword1">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Tipo de mantenimiento</label><br>
-                          <select class="from-control">
-                            <option value="0">Hardware</option>
-                            <option value="0">software</option>
-                          </select>
-                        
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Fecha de llegada</label>
-                        <input type="date" required class="form-control" id="exampleInputPassword1">
-                      </div>
+                <div class="mb-3">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Ficha tecnica:</label>
+                    <h5>29052023</h5> 
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Tipo de mantenimiento</label>
+                  <input type="text" required class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Fecha de entrega</label>
+                    <input type="date" required class="form-control" id="exampleFormControlInput1" placeholder="Fecha de entrega">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Total a pagar</label>
+                    <input type="number" required class="form-control" id="exampleFormControlInput1" placeholder="Total a pagar">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descripción de fallas</label>
+                    <textarea class="form-control" required id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button class="btn btn-primary">Registrar equipo</button></form>
+              <button class="btn btn-primary">Enviar</button></form>
             </div>
           </div>
         </div>
