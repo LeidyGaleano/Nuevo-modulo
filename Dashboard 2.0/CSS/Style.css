@@ -10,10 +10,6 @@ body{
     font-style: normal;
     background: rgb(241, 249, 252);   
 }
-a:link , a:visited,  a:hover, a:active{
-    text-decoration: none;
-    color: black;
-}
 
 .MenuLogo{
     position: absolute;
